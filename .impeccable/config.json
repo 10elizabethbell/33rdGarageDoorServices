@@ -26,6 +26,60 @@
         ],
         "createdAt": "2026-10-19T11:37:47.807Z",
         "reason": "services list is a ruled list: rows have 14px vertical padding under the top rule; flush left is the list's alignment"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(255, 255, 255)",
+        "createdAt": "2026-10-19T11:49:06.111Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(217, 207, 182)",
+        "createdAt": "2026-10-19T11:49:06.183Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(62, 53, 32)",
+        "createdAt": "2026-10-19T11:49:06.260Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#7d8a94",
+        "createdAt": "2026-10-19T11:49:06.336Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d4c18d",
+        "createdAt": "2026-10-19T11:49:06.420Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#7d6d45",
+        "createdAt": "2026-10-19T11:49:06.502Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "30px",
+        "createdAt": "2026-10-19T11:49:06.580Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped) (wordmark sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "12px",
+        "createdAt": "2026-10-19T11:49:06.651Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped) (wordmark sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11px",
+        "createdAt": "2026-10-19T11:49:06.725Z",
+        "reason": "shipped build value the DESIGN.md documenter left out (DESIGN.md was derived from this build after it shipped) (wordmark sizes)"
       }
     ]
   }

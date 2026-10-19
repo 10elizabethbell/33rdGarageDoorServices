@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>33rd Garage Door Services · Garage door repair, North NJ</title>
+<meta name="description" content="Emergency spring repair, tune-ups and new garage doors. 20 years of experience. Free estimates. Call or text 862-621-8333.">
+<meta name="theme-color" content="#1d4660">
+<meta property="og:type" content="website">
+<meta property="og:title" content="33rd Garage Door Services">
+<meta property="og:description" content="Stuck door? We're on it. Emergency spring repair, tune-ups and new doors. Free estimates. Call or text 862-621-8333.">
+<meta property="og:url" content="https://10elizabethbell.github.io/33rdGarageDoorServices/">
+<meta property="og:image" content="https://10elizabethbell.github.io/33rdGarageDoorServices/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231d4660'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='36' text-anchor='middle' fill='%23f1f5f7'%3E33%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --board:#1d4660;        /* painted steel pegboard */
+  --board-deep:#173a51;
+  --board-lit:#24556f;
+  --hole:#0a1f2d;
+  --ink:#f1f5f7;
+  --ink-soft:#bcd0dd;
+  --steel:#c9d3da;
+  --red:#c8321f;          /* emergency release handle */
+  --red-hi:#a8281a;
+  --tag:#ecdcae;          /* manila parts tag */
+  --tag-ink:#2a2416;
+  --tag-soft:#5c4f30;
+  --focus:#1d4660;        /* form accent on manila */
+  --grid:24px;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{overscroll-behavior-y:none;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--board);color:var(--ink);font:400 17px/1.55 var(--font)}
+::selection{background:var(--tag);color:var(--tag-ink)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tag);outline-offset:3px;border-radius:6px}
+img,canvas{display:block}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* pegboard holes, reused by any .board element */
+.board{position:relative;isolation:isolate}
+.board::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    radial-gradient(circle at 50% 46%, var(--hole) 0 2.9px, transparent 3.5px),
+    radial-gradient(circle at 50% 58%, rgba(255,255,255,.13) 0 3px, transparent 3.6px);
+  background-size:var(--grid) var(--grid);
+  background-position:0 0;
+}
+
+/* ---------- header ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:10px 16px;max-width:1184px;margin:0 auto}
+.mark{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;line-height:1}
+.mark b{font-weight:900;font-size:30px;letter-spacing:-.03em}
+.mark b sup{font-size:.48em;vertical-align:.85em;letter-spacing:0;margin-left:1px}
+.mark span{font-size:11px;font-weight:700;letter-spacing:.1em;white-space:nowrap;text-transform:uppercase;color:var(--ink-soft);line-height:1.25}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;
+  font-weight:800;font-size:17px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tel svg{width:18px;height:18px;flex:none}
+.tel:hover{color:var(--tag)}
+
+/* ---------- hero ---------- */
+.hero{background:linear-gradient(180deg,var(--board-lit),var(--board) 60%)}
+.hero::before{-webkit-mask-image:linear-gradient(180deg,transparent 0,transparent var(--copy-h,420px),#000 calc(var(--copy-h,420px) + 40px));
+  mask-image:linear-gradient(180deg,transparent 0,transparent var(--copy-h,420px),#000 calc(var(--copy-h,420px) + 40px))}
+.hero-copy{padding:18px 16px 8px;max-width:600px}
+h1{margin:0;font-weight:900;text-transform:uppercase;letter-spacing:-.025em;
+  font-size:clamp(46px,14vw,92px);line-height:.92;text-wrap:balance}
+.promise{margin:16px 0 0;font-size:clamp(17px,4.6vw,20px);line-height:1.45;color:var(--ink-soft);max-width:30ch}
+.actions{display:grid;gap:12px;margin-top:24px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 22px;
+  border-radius:10px;border:2px solid var(--steel);font:800 18px/1.1 var(--font);
+  text-decoration:none;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .1s}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 6px 16px -6px rgba(5,15,25,.6)}
+.btn-red:hover{background:var(--red-hi);border-color:var(--red-hi)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{border-color:var(--tag);color:var(--tag)}
+.rack{position:relative;height:clamp(300px,46svh,420px);touch-action:none;cursor:grab;
+  -webkit-user-select:none;user-select:none}
+.rack.grabbing{cursor:grabbing}
+.rack canvas{position:absolute;inset:0;width:100%;height:100%}
+
+/* ---------- spring dividers ---------- */
+.seam{position:relative;height:56px;margin:-28px 0;z-index:2;pointer-events:none}
+.seam canvas{width:100%;height:100%}
+
+/* ---------- sections ---------- */
+section{padding:64px 16px 72px}
+.wrap{max-width:1120px;margin:0 auto}
+h2{margin:0 0 20px;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;
+  font-size:clamp(32px,9vw,56px);line-height:.98;text-wrap:balance}
+.lede{margin:0 0 28px;color:var(--ink-soft);max-width:44ch}
+
+/* services: whole row is the link, only the arrow reacts */
+.fix{background:var(--board-deep)}
+.rows{list-style:none;margin:0;padding:0;border-top:2px solid rgba(201,211,218,.22)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;
+  min-height:76px;padding:14px 0;text-decoration:none;border-bottom:2px solid rgba(201,211,218,.22);
+  font-weight:800;font-size:clamp(22px,6vw,32px);letter-spacing:-.01em;line-height:1.1}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.arrow{flex:none;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;
+  border:2px solid rgba(201,211,218,.5);transition:background-color .2s,border-color .2s}
+.arrow svg{width:20px;height:20px}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--red);border-color:var(--red)}
+.row:focus-visible .arrow{outline:3px solid var(--tag);outline-offset:3px}
+.rows-note{margin:18px 0 0;color:var(--ink-soft);font-size:16px}
+
+/* how it works: parts tags hanging on the board */
+.steps{background:var(--board)}
+.tags{list-style:none;margin:0;padding:0;display:grid;gap:28px}
+.tag{position:relative;padding-top:22px;transform-origin:50% 0;will-change:transform}
+.tag .peg{position:absolute;top:0;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;
+  background:radial-gradient(circle at 40% 35%,#eef2f4,#7d8a94 70%);box-shadow:0 2px 3px rgba(0,0,0,.45);z-index:2}
+.tag .string{position:absolute;top:6px;left:50%;width:2px;height:24px;margin-left:-1px;background:#d9cfb6;z-index:1}
+.tag-card{position:relative;background:var(--tag);color:var(--tag-ink);padding:30px 22px 22px;
+  border-radius:6px 6px 10px 10px;clip-path:polygon(18% 0,82% 0,100% 14px,100% 100%,0 100%,0 14px);
+  filter:drop-shadow(5px 9px 7px rgba(4,16,26,.45))}
+.tag-card::before{content:"";position:absolute;top:12px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;
+  background:var(--board);box-shadow:inset 0 0 0 3px #d4c18d}
+.tag-card .n{color:var(--red);margin-right:.35em}
+.tag-card h3{margin:14px 0 6px;font-weight:900;font-size:26px;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}
+.tag-card p{margin:0;font-size:17px;color:#3e3520}
+
+/* our word */
+.word{background:var(--board-deep)}
+.word blockquote{margin:0;max-width:30ch;font-weight:800;font-size:clamp(26px,7vw,44px);line-height:1.12;letter-spacing:-.01em}
+.word .more{margin:24px 0 0;max-width:52ch;color:var(--ink-soft)}
+.word .sig{margin:18px 0 0;font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* estimate: manila work order */
+.estimate{background:var(--board)}
+.sheet{position:relative;background:var(--tag);color:var(--tag-ink);border-radius:8px;padding:28px 18px 26px;
+  box-shadow:0 18px 30px -14px rgba(4,16,26,.65);max-width:720px}
+.sheet::before,.sheet::after{content:"";position:absolute;top:-7px;width:14px;height:14px;border-radius:50%;
+  background:radial-gradient(circle at 40% 35%,#eef2f4,#7d8a94 70%);box-shadow:0 2px 3px rgba(0,0,0,.45)}
+.sheet::before{left:24px}.sheet::after{right:24px}
+.sheet h2{color:var(--tag-ink)}
+.sheet .lede{color:var(--tag-soft)}
+fieldset{border:0;margin:0 0 22px;padding:0;min-width:0}
+legend,.lbl{display:block;font-weight:800;font-size:16px;margin:0 0 10px;padding:0}
+.opt{font-weight:500;color:var(--tag-soft)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:flex;align-items:center;min-height:46px;padding:0 16px;border-radius:8px;
+  background:#f7ecca;border:2px solid #c9b47c;font-weight:700;font-size:16px;cursor:pointer;
+  transition:background-color .15s,border-color .15s,color .15s}
+.chip:hover span{outline:3px solid var(--focus);outline-offset:1px}
+.chip input:focus-visible + span{outline:3px solid var(--focus);outline-offset:1px}
+.chip input:checked + span{background:var(--board);border-color:var(--board);color:var(--ink)}
+.field{margin:0 0 22px}
+.field input,.field textarea{width:100%;min-height:52px;padding:12px 14px;border-radius:8px;border:2px solid #c9b47c;
+  background:#fbf4dc;color:var(--tag-ink);font:500 17px/1.4 var(--font);transition:border-color .15s}
+.field textarea{min-height:104px;resize:vertical}
+.field input:hover,.field textarea:hover,.field input:focus,.field textarea:focus{outline:3px solid var(--focus);outline-offset:1px}
+.field input::placeholder,.field textarea::placeholder{color:#7d6d45}
+.err{display:none;margin:8px 0 0;color:#9b2414;font-weight:700;font-size:15px}
+.bad .err{display:block}
+.bad .chips span,.bad input{border-color:#9b2414}
+.send{display:grid;gap:12px;margin-top:6px}
+.sheet .btn-ghost{border-color:#8c7a4c;color:var(--tag-ink)}
+.sheet .btn:hover,.sheet .btn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.sheet .btn-ghost:hover{color:var(--tag-ink);border-color:#8c7a4c}
+.fine{margin:10px 0 0;font-size:15px;color:var(--tag-soft)}
+.copied{color:var(--board);font-weight:800}
+
+/* close */
+.close{background:var(--board-deep);text-align:left}
+.close .big{display:inline-flex;white-space:nowrap;align-items:center;min-height:56px;font-weight:900;
+  font-size:clamp(38px,11vw,72px);letter-spacing:-.02em;text-decoration:none;font-variant-numeric:tabular-nums;line-height:1}
+.close .big:hover{color:var(--tag)}
+.close p{margin:10px 0 0;color:var(--ink-soft)}
+
+footer{background:#122f42;padding:32px 16px 40px;color:var(--ink-soft);font-size:16px}
+footer .wrap{display:grid;gap:6px}
+footer strong{color:var(--ink);font-size:18px}
+footer a{text-decoration:none;font-weight:700;color:var(--ink);display:inline-flex;align-items:center;min-height:44px}
+footer a:hover{color:var(--tag)}
+
+/* ---------- wider screens ---------- */
+@media (min-width:640px){
+  .actions{grid-template-columns:auto auto;justify-content:start}
+  .tags{grid-template-columns:repeat(3,1fr);gap:24px}
+  .send{grid-template-columns:auto auto;justify-content:start}
+  .sheet{padding:36px 36px 32px}
+}
+@media (min-width:1024px){
+  .top{padding:18px 32px}
+  .hero{display:grid;grid-template-columns:minmax(0,600px) minmax(0,1fr);min-height:min(820px,calc(100svh - 80px))}
+  .hero::before{-webkit-mask-image:linear-gradient(90deg,transparent 0,transparent var(--copy-w,560px),#000 calc(var(--copy-w,560px) + 60px));
+    mask-image:linear-gradient(90deg,transparent 0,transparent var(--copy-w,560px),#000 calc(var(--copy-w,560px) + 60px))}
+  .hero-copy{padding:72px 32px 96px max(32px,calc((100vw - 1120px) / 2 + 16px));align-self:center;max-width:none}
+  .hero{grid-template-columns:minmax(0,calc(560px + max(0px,(100vw - 1120px) / 2))) minmax(0,1fr)}
+  .promise{font-size:20px}
+  .rack{height:auto;min-height:620px}
+  section{padding:104px 32px 112px}
+  .fix .wrap{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:start}
+  .tags{gap:40px}
+  .word .wrap{display:grid;grid-template-columns:7fr 5fr;gap:64px;align-items:end}
+  .word .more{margin:0}
+  .estimate .wrap{display:grid;grid-template-columns:4fr 7fr;gap:56px;align-items:start}
+  .estimate .aside h2{position:sticky;top:32px}
+  .close .wrap{display:flex;justify-content:space-between;align-items:end;gap:32px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<!--
+THESIS: The garage's own pegboard wall, hung with real door hardware you can grab and swing. Refuses the category's stock-photo-of-a-smiling-tech-and-a-van page.
+OWN-WORLD: Painted steel-blue pegboard (#1d4660) with a 24px hole grid; galvanized and oil-tempered steel parts; manila parts tags and a manila work order (#ecdcae); emergency-release red (#c8321f) for the one primary action. Heavy uppercase system sans. Stretched extension springs are the seams between sections.
+STORY: Door's stuck → these people do exactly this, have for 20 years, and are straight with you → text a photo now, or fill out the free estimate and send it as a text.
+FIRST VIEWPORT (phone): header (33rd wordmark left, 862-621-8333 top right), "STUCK DOOR? WE'RE ON IT." huge, one-line promise, red "Text us a photo" + outlined "Free estimate", then the pegboard rack of swinging hardware filling the bottom of the screen.
+FORM: Pegboard wall, my list #6 (raised: hole-grid discipline, overlap-depth shadows, the number as a stamped object). Seed 9dcdd570.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<header class="top">
+  <a class="mark" href="#top" aria-label="33rd Garage Door Services, home">
+    <b>33<sup>rd</sup></b>
+    <span>Garage Door<br>Services</span>
+  </a>
+  <a class="tel" href="tel:+18626218333" aria-label="Call 862-621-8333">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>
+    862-621-8333
+  </a>
+</header>
+
+<main id="top">
+<div class="hero board" id="hero">
+  <div class="hero-copy" id="heroCopy">
+    <h1>Stuck door? We're on&nbsp;it.</h1>
+    <p class="promise">Twenty years in, we still treat every garage like our own and tell you straight what your door needs.</p>
+    <div class="actions">
+      <a class="btn btn-red" id="heroText" href="sms:+18626218333?&body=Hi%2033rd%20Garage%20Door%20Services!%20I%20need%20help%20with%20my%20garage%20door.%20Here's%20what%20it's%20doing%3A%20">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg>
+        Text us a photo
+      </a>
+      <a class="btn btn-ghost" href="#estimate">Free estimate</a>
+    </div>
+  </div>
+  <div class="rack" id="rack" aria-hidden="true"><canvas id="rackCanvas"></canvas></div>
+</div>
+
+<div class="seam" aria-hidden="true" data-top="#1d4660" data-bottom="#173a51"><canvas></canvas></div>
+
+<section class="fix" id="services" aria-labelledby="fixH">
+  <div class="wrap">
+    <div>
+      <h2 id="fixH">What we fix</h2>
+      <p class="lede">Tap one and we'll get a text started for you.</p>
+    </div>
+    <div>
+      <ul class="rows">
+        <li><a class="row" data-service="emergency spring repair" href="sms:+18626218333">Emergency spring repair<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a class="row" data-service="a routine tune-up" href="sms:+18626218333">Routine tune-up<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a class="row" data-service="a full door upgrade" href="sms:+18626218333">Full door upgrade<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></li>
+      </ul>
+      <p class="rows-note">Every estimate is free.</p>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true" data-top="#173a51" data-bottom="#1d4660"><canvas></canvas></div>
+
+<section class="steps board" aria-labelledby="stepsH">
+  <div class="wrap">
+    <h2 id="stepsH">How it works</h2>
+    <ol class="tags">
+      <li class="tag"><span class="string"></span><span class="peg"></span><div class="tag-card"><h3><span class="n">1</span>Tell us</h3><p>Text a photo or call, and tell us what the door is doing.</p></div></li>
+      <li class="tag"><span class="string"></span><span class="peg"></span><div class="tag-card"><h3><span class="n">2</span>Free estimate</h3><p>You hear what it needs and what it costs before any work starts.</p></div></li>
+      <li class="tag"><span class="string"></span><span class="peg"></span><div class="tag-card"><h3><span class="n">3</span>Fixed right</h3><p>We do the job with the care we'd want in our own garage.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true" data-top="#1d4660" data-bottom="#173a51"><canvas></canvas></div>
+
+<section class="word" aria-labelledby="wordH">
+  <div class="wrap">
+    <div>
+      <h2 id="wordH" class="sr">Quality over quantity</h2>
+      <blockquote>We'd rather do fewer jobs and get every one of them right.</blockquote>
+    </div>
+    <div>
+      <p class="more">Twenty years of garage doors goes into yours. Customer service and honesty matter most to us: we'll tell you what your door needs and what it doesn't, and your satisfaction is guaranteed.</p>
+      <p class="sig">33rd Garage Door Services</p>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true" data-top="#173a51" data-bottom="#1d4660"><canvas></canvas></div>
+
+<section class="estimate" id="estimate" aria-labelledby="estH">
+  <div class="wrap">
+    <div class="aside">
+      <h2 id="estH">Free estimate</h2>
+      <p class="lede">Fill this in and it becomes a text to us. Add a photo of the door in your messages if you can.</p>
+    </div>
+    <form class="sheet" id="estForm" novalidate>
+      <fieldset id="fProblem">
+        <legend>What's going on?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="problem" value="A spring broke"><span>Spring broke</span></label>
+          <label class="chip"><input type="radio" name="problem" value="Door won't open"><span>Won't open</span></label>
+          <label class="chip"><input type="radio" name="problem" value="Door won't close"><span>Won't close</span></label>
+          <label class="chip"><input type="radio" name="problem" value="Noisy or shaky"><span>Noisy or shaky</span></label>
+          <label class="chip"><input type="radio" name="problem" value="Tune-up"><span>Tune-up</span></label>
+          <label class="chip"><input type="radio" name="problem" value="New door"><span>New door</span></label>
+        </div>
+        <p class="err" id="problemErr">Pick the one closest to what's happening.</p>
+      </fieldset>
+      <fieldset>
+        <legend>How soon?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="when" value="Today if you can" checked><span>Today if you can</span></label>
+          <label class="chip"><input type="radio" name="when" value="This week"><span>This week</span></label>
+          <label class="chip"><input type="radio" name="when" value="Just planning"><span>Just planning</span></label>
+        </div>
+      </fieldset>
+      <div class="field" id="fName">
+        <label class="lbl" for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name" placeholder="First name is fine">
+        <p class="err">Add your name so we know who's texting.</p>
+      </div>
+      <div class="field" id="fTown">
+        <label class="lbl" for="town">Town</label>
+        <input id="town" name="town" autocomplete="address-level2" placeholder="e.g. Summit">
+        <p class="err">Add your town so we know where the door is.</p>
+      </div>
+      <div class="field">
+        <label class="lbl" for="notes">Anything else? <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="notes" placeholder="Single or double door, any noises, when it started"></textarea>
+      </div>
+      <div class="send">
+        <button class="btn btn-red" type="submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg>
+          Text this to us
+        </button>
+        <button class="btn btn-ghost" type="button" id="copyBtn">Copy the message</button>
+      </div>
+      <p class="fine" id="sendNote">Opens your messages with everything filled in. Nothing is sent until you hit send.</p>
+    </form>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true" data-top="#1d4660" data-bottom="#173a51"><canvas></canvas></div>
+
+<section class="close" aria-labelledby="closeH">
+  <div class="wrap">
+    <div>
+      <h2 id="closeH">Door stuck right now?</h2>
+      <p>Call or text and tell us what it's doing. Serving northern New Jersey.</p>
+    </div>
+    <a class="big" href="tel:+18626218333">862-621-8333</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>33rd Garage Door Services</strong>
+    <span>Garage door repair, tune-ups and new doors · Northern New Jersey</span>
+    <a href="tel:+18626218333">Call or text 862-621-8333</a>
+  </div>
+</footer>
+
+<script>
+/* ===== shared loop: one rAF, systems pause when off screen ===== */
+var Loop = (function(){
+  var systems = [], running = false, last = 0;
+  var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function tick(now){
+    var dt = Math.min(0.033, (now - last) / 1000 || 0.016); last = now;
+    var any = false;
+    for (var i = 0; i < systems.length; i++) if (systems[i].on) { systems[i].step(dt, now / 1000); any = true; }
+    if (any) requestAnimationFrame(tick); else running = false;
+  }
+  function wake(){ if (!running && !still) { running = true; last = performance.now(); requestAnimationFrame(tick); } }
+  function add(el, sys){
+    sys.on = false; systems.push(sys);
+    new IntersectionObserver(function(es){ sys.on = es[0].isIntersecting; if (sys.on) wake(); }, {rootMargin:'80px'}).observe(el);
+    if (still) { sys.step(0, 0); }
+  }
+  return {add:add, still:still};
+})();
+
+/* ===== pointer: mouse + finger, client coordinates, read by every system per frame ===== */
+var Ptr = (function(){
+  var p = {x:-9999, y:-9999, vx:0, vy:0, active:false, t:0};
+  function set(x, y){
+    var now = performance.now(), dt = Math.max(8, now - p.t);
+    if (p.active) { p.vx = (x - p.x) / dt * 16; p.vy = (y - p.y) / dt * 16; }
+    p.x = x; p.y = y; p.t = now; p.active = true;
+  }
+  addEventListener('pointermove', function(e){ set(e.clientX, e.clientY); }, {passive:true});
+  addEventListener('pointerdown', function(e){ p.active = false; set(e.clientX, e.clientY); }, {passive:true});
+  addEventListener('touchstart', function(e){ var t = e.touches[0]; p.active = false; set(t.clientX, t.clientY); }, {passive:true});
+  addEventListener('touchmove', function(e){ var t = e.touches[0]; set(t.clientX, t.clientY); }, {passive:true});
+  addEventListener('touchend', function(){ p.x = p.y = -9999; p.active = false; }, {passive:true});
+  addEventListener('pointerleave', function(){ p.x = p.y = -9999; p.active = false; });
+  return p;
+})();
+
+/* ===== steel drawing helpers ===== */
+var Steel = (function(){
+  function band(ctx, x0, x1, stops){
+    var g = ctx.createLinearGradient(x0, 0, x1, 0);
+    for (var i = 0; i < stops.length; i++) g.addColorStop(i / (stops.length - 1), stops[i]);
+    return g;
+  }
+  var GALV = ['#7a868f','#e9eef1','#aab5bc','#6c7780'];
+  var OIL  = ['#1b2126','#6d8292','#2a333b','#161b20'];
+  /* coil along +y from y0 to y1, radius r, wire w, n coils */
+  function coil(ctx, y0, y1, r, w, n, dark){
+    var pitch = (y1 - y0) / n, i, y;
+    ctx.lineCap = 'round';
+    ctx.lineWidth = w * 0.9; ctx.strokeStyle = dark ? '#0f1418' : '#56616a';
+    ctx.beginPath();
+    for (i = 0; i < n; i++) { y = y0 + i * pitch; ctx.moveTo(-r, y); ctx.quadraticCurveTo(0, y - r * 0.55, r, y); }
+    ctx.stroke();
+    ctx.lineWidth = w; ctx.strokeStyle = band(ctx, -r, r, dark ? OIL : GALV);
+    ctx.beginPath();
+    for (i = 0; i < n; i++) { y = y0 + i * pitch; ctx.moveTo(r, y); ctx.quadraticCurveTo(0, y + pitch * 0.5 + r * 0.55, -r, y + pitch); }
+    ctx.stroke();
+  }
+  function rod(ctx, x, y0, y1, w){
+    ctx.fillStyle = band(ctx, x - w / 2, x + w / 2, ['#4a535a','#dfe5e9','#8d989f','#3f474e']);
+    ctx.beginPath(); ctx.roundRect ? ctx.roundRect(x - w / 2, y0, w, y1 - y0, w / 2) : ctx.rect(x - w / 2, y0, w, y1 - y0); ctx.fill();
+  }
+  function hook(ctx){
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = band(ctx, -3, 3, ['#5d6870','#eef2f4','#7d8a94']); ctx.lineWidth = 4.5;
+    ctx.beginPath(); ctx.moveTo(0, 3); ctx.lineTo(0, -8); ctx.stroke();
+    var g = ctx.createRadialGradient(-1.5, -1.5, 0.5, 0, 0, 5.5);
+    g.addColorStop(0, '#f4f7f8'); g.addColorStop(1, '#6b7780');
+    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, 0, 4.8, 0, 7); ctx.fill();
+  }
+  return {band:band, coil:coil, rod:rod, hook:hook, GALV:GALV, OIL:OIL};
+})();
+
+/* ===== hero rack: door hardware hanging on peg hooks ===== */
+(function(){
+  var GRAVITY = 1500, DAMP = 1.1, WIND = 0.9, PUSH_R = 64, PUSH = 0.0016, GRAB_K = 260, GRAB_D = 22,
+      SPRING_K = 90, SPRING_D = 3.2, MAX_DPR = 1.5, SHADOW = {x:7, y:11, blur:9, a:0.42};
+  var hero = document.getElementById('hero'), rack = document.getElementById('rack'),
+      cv = document.getElementById('rackCanvas'), ctx = cv.getContext('2d'),
+      copy = document.getElementById('heroCopy');
+  var W = 0, H = 0, dpr = 1, parts = [], grab = null, gx = 0, gy = 0;
+
+  /* part types: draw(ctx, part) in local frame (pivot at 0,0, hanging along +y) */
+  var TYPES = {
+    bars:   {len:250, hit:12, draw:function(c, p){ c.save(); c.rotate(0.05); Steel.rod(c, -3, -4, p.len, 8); c.restore(); c.save(); c.rotate(-0.06); Steel.rod(c, 3, -4, p.len - 14, 8); c.restore(); }},
+    torsion:{len:190, hit:24, draw:function(c, p){
+      Steel.coil(c, 8, p.len - 30, 19, 6, Math.round((p.len - 38) / 6.6), true);
+      var y = p.len - 32, g = Steel.band(c, -23, 23, ['#7e1d12','#e2533f','#b52c1b','#5d140c']);
+      c.fillStyle = g; c.beginPath(); c.roundRect ? c.roundRect(-23, y, 46, 30, 5) : c.rect(-23, y, 46, 30); c.fill();
+      c.fillStyle = '#3a0c06'; c.beginPath(); c.arc(-9, y + 15, 4.2, 0, 7); c.arc(9, y + 15, 4.2, 0, 7); c.fill();
+      c.fillStyle = 'rgba(0,0,0,.25)'; c.fillRect(-23, y + 22, 46, 3); }},
+    ext:    {len:150, hit:18, stretch:true, draw:function(c, p){
+      var L = p.len * (1 + p.s);
+      c.lineWidth = 3.4; c.strokeStyle = Steel.band(c, -10, 10, Steel.GALV);
+      c.beginPath(); c.arc(0, 8, 8, 0, 7); c.stroke();
+      Steel.coil(c, 18, L - 18, 11, 3.6, 18, false);
+      c.beginPath(); c.arc(0, L - 8, 8, 0, 7); c.stroke(); }},
+    roller: {len:96, hit:20, draw:function(c, p){
+      Steel.rod(c, 0, 0, p.len, 7);
+      var g = c.createRadialGradient(-6, -6, 2, 0, 0, 22); g.addColorStop(0, '#ffffff'); g.addColorStop(0.7, '#dfe2da'); g.addColorStop(1, '#9fa59a');
+      c.fillStyle = g; c.beginPath(); c.arc(0, 0, 21, 0, 7); c.fill();
+      c.fillStyle = Steel.band(c, -10, 10, Steel.GALV); c.beginPath(); c.arc(0, 0, 10, 0, 7); c.fill();
+      c.fillStyle = '#39434a'; c.beginPath(); c.arc(0, 0, 4.5, 0, 7); c.fill(); }},
+    hinge:  {len:96, hit:22, draw:function(c, p){
+      var g = Steel.band(c, -17, 17, ['#a9b4bb','#d3dbe0','#c3ccd2','#9aa6ae']);
+      c.fillStyle = g; c.beginPath(); c.roundRect ? c.roundRect(-17, -9, 34, 46, 4) : c.rect(-17, -9, 34, 46); c.fill();
+      c.beginPath(); c.roundRect ? c.roundRect(-17, 50, 34, 44, 4) : c.rect(-17, 50, 34, 44); c.fill();
+      c.fillStyle = Steel.band(c, -21, 21, ['#5c676f','#f0f4f6','#8e9aa2','#4f5960']);
+      c.beginPath(); c.roundRect ? c.roundRect(-21, 36, 42, 15, 7) : c.rect(-21, 36, 42, 15); c.fill();
+      c.fillStyle = '#1b3446'; [[-8,22],[8,22],[-8,64],[8,64],[-8,80],[8,80]].forEach(function(h){ c.beginPath(); c.arc(h[0], h[1], 3.2, 0, 7); c.fill(); });
+      c.beginPath(); c.arc(0, 0, 4, 0, 7); c.fill();
+      c.fillStyle = 'rgba(40,52,60,.55)'; c.font = '900 13px system-ui,sans-serif'; c.textAlign = 'center'; c.fillText('2', 0, 13); }},
+    cable:  {len:86, hit:30, draw:function(c, p){
+      for (var i = 0; i < 4; i++) {
+        c.lineWidth = 2.6; c.strokeStyle = i % 2 ? '#d7dde1' : '#8a959c';
+        c.beginPath(); c.ellipse(i * 1.6 - 2.4, 42 + i, 30 - i, 40 - i * 0.8, 0.08 * i, 0, 7); c.stroke();
+      }
+      c.lineWidth = 6; c.strokeStyle = '#c8321f'; c.beginPath(); c.moveTo(-6, 4); c.lineTo(6, 4); c.stroke(); }}
+  };
+
+  /* layouts: x as share of width, row in grid holes from top */
+  var PHONE = [['bars',.10,1],['torsion',.32,1],['ext',.55,2],['roller',.74,1],['hinge',.90,3]];
+  var WIDE  = [['bars',.08,2],['torsion',.24,3],['ext',.40,2],['cable',.56,4],['roller',.70,3],['hinge',.84,2],
+               ['ext',.92,12,110],['roller',.48,15,80],['hinge',.27,16],['torsion',.66,13,150]];
+
+  function layout(){
+    var r = rack.getBoundingClientRect(), hr = hero.getBoundingClientRect();
+    var w = Math.round(r.width), h = Math.round(r.height);
+    hero.style.setProperty('--copy-h', copy.offsetHeight + 'px'); hero.style.setProperty('--copy-w', copy.offsetWidth + 'px');
+    if (w === W && h === H) return;
+    W = w; H = h; dpr = Math.min(MAX_DPR, devicePixelRatio || 1);
+    cv.width = W * dpr; cv.height = H * dpr;
+    var G = 24, ox = r.left - hr.left, oy = r.top - hr.top;
+    var set = W >= 560 ? WIDE : PHONE;
+    var old = parts; parts = set.map(function(d, i){
+      var T = TYPES[d[0]], hx = Math.round((d[1] * W + ox - G / 2) / G) * G + G / 2 - ox;
+      var hy = Math.round((d[2] * G + oy + 18 - G / 2) / G) * G + G / 2 - oy;
+      var len = d[3] || T.len;
+      if (W < 560) len = Math.min(len, H - hy - 30);
+      var o = old[i] || {};
+      return {t:T, x:hx, y:hy, len:len, a:o.a || 0, w:o.w || 0, s:0, sv:0, ph:i * 1.7 + 0.4, ph2:i * 2.3};
+    });
+  }
+
+  function centerOf(p){ var d = p.len * 0.55 * (1 + p.s); return {x:p.x + Math.sin(p.a) * d, y:p.y + Math.cos(p.a) * d}; }
+  function distToPart(p, x, y){
+    var L = p.len * (1 + p.s), ex = p.x + Math.sin(p.a) * L, ey = p.y + Math.cos(p.a) * L;
+    var dx = ex - p.x, dy = ey - p.y, t = Math.max(0, Math.min(1, ((x - p.x) * dx + (y - p.y) * dy) / (dx * dx + dy * dy)));
+    return Math.hypot(x - (p.x + dx * t), y - (p.y + dy * t));
+  }
+
+  rack.addEventListener('pointerdown', function(e){
+    var r = rack.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top, best = null, bd = 1e9;
+    parts.forEach(function(p){ var d = distToPart(p, x, y); if (d < p.t.hit + 14 && d < bd) { bd = d; best = p; } });
+    if (best) { grab = best; gx = e.clientX; gy = e.clientY; rack.classList.add('grabbing'); try { rack.setPointerCapture(e.pointerId); } catch (_) {} e.preventDefault(); }
+  });
+  rack.addEventListener('pointermove', function(e){ if (grab) { gx = e.clientX; gy = e.clientY; } });
+  function drop(){ grab = null; rack.classList.remove('grabbing'); }
+  rack.addEventListener('pointerup', drop); rack.addEventListener('pointercancel', drop);
+
+  function step(dt, t){
+    layout();
+    var r = rack.getBoundingClientRect();
+    var px = Ptr.x - r.left, py = Ptr.y - r.top;
+    for (var i = 0; i < parts.length; i++) {
+      var p = parts[i], L = p.len * 0.6;
+      var acc = -GRAVITY / L * Math.sin(p.a) - DAMP * p.w;
+      acc += WIND * (Math.sin(t * 0.9 + p.ph) + 0.6 * Math.sin(t * 2.3 + p.ph2) + 0.3 * Math.sin(t * 4.1 + p.ph * 2));
+      if (grab === p) {
+        var lx = gx - r.left - p.x, ly = gy - r.top - p.y;
+        var target = Math.atan2(lx, Math.max(8, ly));
+        acc += GRAB_K * (target - p.a) - GRAB_D * p.w;
+        if (p.t.stretch) { var ns = p.s + (Math.max(-0.15, Math.min(0.9, Math.hypot(lx, ly) / (p.len * 0.85) - 1)) - p.s) * Math.min(1, dt * 12); p.sv = dt ? (ns - p.s) / dt : 0; p.s = ns; }
+      } else if (Ptr.active) {
+        var c = centerOf(p), d = distToPart(p, px, py);
+        if (d < PUSH_R) {
+          var f = 1 - d / PUSH_R;
+          acc += (Ptr.vx * 60) * PUSH * f * 60 / L * 3 + (px < c.x ? 1 : -1) * f * 6;
+          if (p.t.stretch) p.sv += Ptr.vy * 0.004 * f;
+        }
+      }
+      p.w += acc * dt; p.w = Math.max(-9, Math.min(9, p.w));
+      p.a += p.w * dt; p.a = Math.max(-1.25, Math.min(1.25, p.a));
+      if (p.t.stretch && grab !== p) { p.sv += (-SPRING_K * p.s - SPRING_D * p.sv) * dt; p.s += p.sv * dt; p.s = Math.max(-0.2, Math.min(1, p.s)); }
+    }
+    draw();
+  }
+
+  function draw(){
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    var i, p;
+    /* shadows: the part's own silhouette offset down-right, blurred */
+    ctx.save();
+    ctx.shadowColor = 'rgba(4,16,26,' + SHADOW.a + ')'; ctx.shadowBlur = SHADOW.blur * dpr;
+    ctx.shadowOffsetX = (SHADOW.x + 4000) * dpr; ctx.shadowOffsetY = SHADOW.y * dpr;
+    for (i = 0; i < parts.length; i++) { p = parts[i]; ctx.save(); ctx.translate(p.x - 4000, p.y); ctx.rotate(-p.a); p.t.draw(ctx, p); ctx.restore(); }
+    ctx.restore();
+    for (i = 0; i < parts.length; i++) {
+      p = parts[i];
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(-p.a); p.t.draw(ctx, p); ctx.restore();
+      ctx.save(); ctx.translate(p.x, p.y); Steel.hook(ctx); ctx.restore();
+    }
+  }
+
+  layout();
+  addEventListener('resize', function(){ layout(); if (Loop.still) draw(); });
+  Loop.add(rack, {step:step});
+  if (Loop.still) draw();
+})();
+
+/* ===== spring seams: an extension spring stretched between sections, plucked by pointer ===== */
+(function(){
+  var SPACING = 9, TENSION = 2600, DAMP = 1.6, PLUCK = 0.9, SWELL = 2.2, COIL_R = 9, WIRE = 3.2, MAX_DPR = 1.5;
+  document.querySelectorAll('.seam').forEach(function(seam){
+    var cv = seam.querySelector('canvas'), ctx = cv.getContext('2d');
+    var W = 0, H = 0, dpr = 1, n = 0, y = [], v = [], top = seam.dataset.top, bot = seam.dataset.bottom;
+    function size(){
+      var w = Math.round(seam.clientWidth), h = Math.round(seam.clientHeight);
+      if (w === W && h === H) return;
+      W = w; H = h; dpr = Math.min(MAX_DPR, devicePixelRatio || 1);
+      cv.width = W * dpr; cv.height = H * dpr;
+      n = Math.max(8, Math.round((W - 32) / SPACING)); y = new Float32Array(n + 1); v = new Float32Array(n + 1);
+    }
+    var lastPx = null;
+    function step(dt, t){
+      size();
+      var r = seam.getBoundingClientRect(), x0 = 16, len = W - 32, seg = len / n;
+      var px = Ptr.x - r.left, py = Ptr.y - r.top - H / 2;
+      /* pointer (or a finger with the page scrolling under it) crossing the spring pushes it */
+      if (Ptr.active && px > x0 && px < x0 + len && Math.abs(py) < 40) {
+        var k = Math.round((px - x0) / seg);
+        for (var j = Math.max(1, k - 3); j <= Math.min(n - 1, k + 3); j++) {
+          var f = 1 - Math.abs(j - k) / 4;
+          if (Math.abs(py - y[j]) < 18) v[j] += (py > y[j] ? -1 : 1) * PLUCK * 60 * f;
+        }
+      }
+      for (var s = 0; s < 2; s++) {
+        var h = dt / 2;
+        for (var i = 1; i < n; i++) {
+          var a = TENSION * (y[i - 1] + y[i + 1] - 2 * y[i]) / (seg * seg) * 6 - DAMP * v[i];
+          v[i] += a * h;
+        }
+        for (i = 1; i < n; i++) { y[i] += v[i] * h; y[i] = Math.max(-20, Math.min(20, y[i])); }
+      }
+      draw(t, x0, seg);
+    }
+    function draw(t, x0, seg){
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.fillStyle = top; ctx.fillRect(0, 0, W, H / 2);
+      ctx.fillStyle = bot; ctx.fillRect(0, H / 2, W, H / 2);
+      var mid = H / 2, cx, cy, i;
+      /* swell: the coil spacing breathes, two waves at different speeds */
+      function at(i){ var u = i / n; return mid + y[i] + Math.sin(u * Math.PI) * (Math.sin(t * 1.3 + u * 9) * SWELL + Math.sin(t * 2.1 - u * 14) * SWELL * 0.5); }
+      /* shadow */
+      ctx.save(); ctx.strokeStyle = 'rgba(4,16,26,.35)'; ctx.lineWidth = COIL_R * 2; ctx.lineCap = 'round';
+      ctx.beginPath(); for (i = 0; i <= n; i++) { cx = x0 + i * seg + 5; cy = at(i) + 8; i ? ctx.lineTo(cx, cy) : ctx.moveTo(cx, cy); } ctx.stroke(); ctx.restore();
+      /* end loops on hooks */
+      [[x0, at(0)], [x0 + n * seg, at(n)]].forEach(function(e){ ctx.save(); ctx.translate(e[0], e[1]); ctx.lineWidth = WIRE; ctx.strokeStyle = Steel.band(ctx, -9, 9, Steel.GALV); ctx.beginPath(); ctx.arc(0, 0, 7, 0, 7); ctx.stroke(); Steel.hook(ctx); ctx.restore(); });
+      /* coils: one per segment, each in its own frame along the local tangent */
+      var back = [], front = [];
+      for (i = 1; i < n; i++) {
+        var xa = x0 + i * seg, ya = at(i), ang = Math.atan2(at(i + 1) - at(i - 1), 2 * seg);
+        back.push([xa, ya, ang]);
+      }
+      ctx.lineCap = 'round';
+      ctx.lineWidth = WIRE * 0.9; ctx.strokeStyle = '#4d5961';
+      ctx.beginPath();
+      back.forEach(function(b){ var c = Math.cos(b[2]), s = Math.sin(b[2]);
+        ctx.moveTo(b[0] + s * COIL_R, b[1] - c * COIL_R);
+        ctx.quadraticCurveTo(b[0] - c * COIL_R * 0.55, b[1] - s * COIL_R * 0.55, b[0] - s * COIL_R, b[1] + c * COIL_R); });
+      ctx.stroke();
+      var g = ctx.createLinearGradient(0, mid - COIL_R, 0, mid + COIL_R);
+      g.addColorStop(0, '#7a868f'); g.addColorStop(0.35, '#eef2f4'); g.addColorStop(0.7, '#aab5bc'); g.addColorStop(1, '#68737c');
+      ctx.lineWidth = WIRE; ctx.strokeStyle = g;
+      ctx.beginPath();
+      back.forEach(function(b){ var c = Math.cos(b[2]), s = Math.sin(b[2]);
+        ctx.moveTo(b[0] - s * COIL_R, b[1] + c * COIL_R);
+        ctx.quadraticCurveTo(b[0] + c * (seg * 0.5 + COIL_R * 0.55), b[1] + s * (seg * 0.5 + COIL_R * 0.55), b[0] + c * seg + s * COIL_R, b[1] + s * seg - c * COIL_R); });
+      ctx.stroke();
+    }
+    Loop.add(seam, {step:step});
+    if (Loop.still) { size(); draw(0, 16, (W - 32) / n); }
+  });
+})();
+
+/* ===== parts tags sway on their pegs ===== */
+(function(){
+  var SWAY = 0.022, K = 30, D = 3.4, PUSH = 0.0009;
+  var tags = Array.prototype.slice.call(document.querySelectorAll('.tag')).map(function(el, i){ return {el:el, a:0, w:0, ph:i * 1.9}; });
+  if (!tags.length) return;
+  Loop.add(document.querySelector('.tags'), {step:function(dt, t){
+    tags.forEach(function(g){
+      var r = g.el.getBoundingClientRect(), acc = -K * g.a - D * g.w + SWAY * (Math.sin(t * 1.1 + g.ph) + 0.5 * Math.sin(t * 2.6 + g.ph)) * K;
+      if (Ptr.active && Ptr.x > r.left && Ptr.x < r.right && Ptr.y > r.top && Ptr.y < r.bottom) acc += Ptr.vx * PUSH * 60;
+      g.w += acc * dt; g.a += g.w * dt; g.a = Math.max(-0.06, Math.min(0.06, g.a));
+      g.el.style.transform = 'rotate(' + g.a.toFixed(4) + 'rad)';
+    });
+  }});
+})();
+
+/* ===== service rows: pre-filled texts ===== */
+(function(){
+  var NUM = '+18626218333';
+  document.querySelectorAll('.row[data-service]').forEach(function(a){
+    a.href = 'sms:' + NUM + '?&body=' + encodeURIComponent('Hi 33rd Garage Door Services! I\'d like a free estimate for ' + a.dataset.service + '. My town: ');
+  });
+})();
+
+/* ===== free estimate: compose a text ===== */
+(function(){
+  var NUM = '+18626218333';
+  var form = document.getElementById('estForm'), note = document.getElementById('sendNote'), copyBtn = document.getElementById('copyBtn');
+  function val(n){ var el = form.querySelector('[name="' + n + '"]:checked') || form.elements[n]; return el && el.value ? el.value.trim() : ''; }
+  function message(){
+    var lines = ['Hi 33rd Garage Door Services! I\'d like a free estimate.'];
+    lines.push('Problem: ' + (val('problem') || '?'));
+    lines.push('How soon: ' + val('when'));
+    if (val('name')) lines.push('Name: ' + val('name'));
+    if (val('town')) lines.push('Town: ' + val('town'));
+    if (val('notes')) lines.push('Details: ' + val('notes'));
+    return lines.join('\n');
+  }
+  function check(){
+    var ok = true, first = null;
+    [['fProblem', !!val('problem')], ['fName', !!val('name')], ['fTown', !!val('town')]].forEach(function(c){
+      var el = document.getElementById(c[0]); el.classList.toggle('bad', !c[1]);
+      if (!c[1]) { ok = false; first = first || el; }
+    });
+    if (first) { first.scrollIntoView({block:'center', behavior:'smooth'}); var f = first.querySelector('input'); if (f) f.focus({preventScroll:true}); }
+    return ok;
+  }
+  form.addEventListener('change', function(e){ var b = e.target.closest('.bad'); if (b && (val('problem') || b.id !== 'fProblem')) b.classList.remove('bad'); });
+  form.addEventListener('input', function(e){ var b = e.target.closest('.field.bad'); if (b && e.target.value.trim()) b.classList.remove('bad'); });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!check()) return;
+    location.href = 'sms:' + NUM + '?&body=' + encodeURIComponent(message());
+  });
+  copyBtn.addEventListener('click', function(){
+    if (!check()) return;
+    var txt = message();
+    function done(){ note.innerHTML = '<span class="copied">Copied.</span> Paste it into a text to 862-621-8333.'; }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, fallback); else fallback();
+    function fallback(){ note.textContent = 'Copy this and text it to 862-621-8333: ' + txt.replace(/\n/g, ' · '); }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T11:48:05.723714+00:00",
+  "title": "Design System: 33rd Garage Door Services",
+  "extensions": {
+    "colorMeta": {
+      "emergency-red": {
+        "role": "primary",
+        "displayName": "Emergency-Release Red",
+        "canonical": "#c8321f",
+        "tonalRamp": [
+          "#230000",
+          "#4c0200",
+          "#7e0c00",
+          "#b41905",
+          "#dd4733",
+          "#f97965",
+          "#feb4a6",
+          "#fee9e5"
+        ]
+      },
+      "emergency-red-pressed": {
+        "role": "primary",
+        "displayName": "Pressed Release Red",
+        "canonical": "#a8281a",
+        "tonalRamp": [
+          "#220000",
+          "#4e0000",
+          "#800400",
+          "#ac2c1e",
+          "#d35241",
+          "#fc7763",
+          "#fcb5a8",
+          "#ffe9e5"
+        ]
+      },
+      "manila-tag": {
+        "role": "secondary",
+        "displayName": "Manila Tag",
+        "canonical": "#ecdcae",
+        "tonalRamp": [
+          "#120a00",
+          "#2f2300",
+          "#4e4116",
+          "#6e6036",
+          "#908156",
+          "#b3a478",
+          "#d8c89b",
+          "#feeebf"
+        ]
+      },
+      "manila-field": {
+        "role": "secondary",
+        "displayName": "Manila Field",
+        "canonical": "#fbf4dc",
+        "tonalRamp": [
+          "#100b00",
+          "#2a2512",
+          "#48422e",
+          "#67614c",
+          "#89826d",
+          "#aca58f",
+          "#d0c9b2",
+          "#f6efd7"
+        ]
+      },
+      "manila-chip": {
+        "role": "secondary",
+        "displayName": "Manila Chip",
+        "canonical": "#f7ecca",
+        "tonalRamp": [
+          "#120a00",
+          "#2d2407",
+          "#4b4124",
+          "#6a6143",
+          "#8c8263",
+          "#afa585",
+          "#d4c9a8",
+          "#f9eecc"
+        ]
+      },
+      "manila-rule": {
+        "role": "secondary",
+        "displayName": "Pencil Rule",
+        "canonical": "#8c7a4c",
+        "tonalRamp": [
+          "#130900",
+          "#302300",
+          "#504010",
+          "#715f32",
+          "#938152",
+          "#b6a374",
+          "#dbc897",
+          "#feedc4"
+        ]
+      },
+      "tag-ink": {
+        "role": "secondary",
+        "displayName": "Tag Ink",
+        "canonical": "#2a2416",
+        "tonalRamp": [
+          "#100a01",
+          "#2a2416",
+          "#484132",
+          "#676151",
+          "#898271",
+          "#aca493",
+          "#d0c8b7",
+          "#f6eedb"
+        ]
+      },
+      "tag-ink-soft": {
+        "role": "secondary",
+        "displayName": "Tag Ink Soft",
+        "canonical": "#5c4f30",
+        "tonalRamp": [
+          "#130900",
+          "#2f2304",
+          "#4d4022",
+          "#6d6040",
+          "#8f8160",
+          "#b2a482",
+          "#d7c8a5",
+          "#fdedca"
+        ]
+      },
+      "pegboard": {
+        "role": "neutral",
+        "displayName": "Painted Pegboard",
+        "canonical": "#1d4660",
+        "tonalRamp": [
+          "#000d1c",
+          "#01283e",
+          "#1d4660",
+          "#3d6682",
+          "#5e88a5",
+          "#80abc9",
+          "#a4d0ef",
+          "#e0f1fe"
+        ]
+      },
+      "pegboard-deep": {
+        "role": "neutral",
+        "displayName": "Pegboard Deep",
+        "canonical": "#173a51",
+        "tonalRamp": [
+          "#000d1c",
+          "#03283e",
+          "#23465d",
+          "#42667f",
+          "#6387a2",
+          "#85aac6",
+          "#a8cfeb",
+          "#e0f1fe"
+        ]
+      },
+      "pegboard-lit": {
+        "role": "neutral",
+        "displayName": "Pegboard Lit",
+        "canonical": "#24556f",
+        "tonalRamp": [
+          "#000d1a",
+          "#00293d",
+          "#154761",
+          "#376782",
+          "#5889a5",
+          "#7badca",
+          "#9ed1ef",
+          "#def2fe"
+        ]
+      },
+      "pegboard-shadow": {
+        "role": "neutral",
+        "displayName": "Pegboard Shadow",
+        "canonical": "#122f42",
+        "tonalRamp": [
+          "#000d1c",
+          "#0a283a",
+          "#29455a",
+          "#47657b",
+          "#68879d",
+          "#8aaac1",
+          "#adcee6",
+          "#e0f1fe"
+        ]
+      },
+      "peg-hole": {
+        "role": "neutral",
+        "displayName": "Peg Hole",
+        "canonical": "#0a1f2d",
+        "tonalRamp": [
+          "#000d19",
+          "#122736",
+          "#2f4555",
+          "#4e6475",
+          "#6e8697",
+          "#90a9bb",
+          "#b4cde0",
+          "#e0f1fe"
+        ]
+      },
+      "board-ink": {
+        "role": "neutral",
+        "displayName": "Board Ink",
+        "canonical": "#f1f5f7",
+        "tonalRamp": [
+          "#090c0d",
+          "#232627",
+          "#3f4344",
+          "#5e6263",
+          "#7f8385",
+          "#a2a6a7",
+          "#c6cacc",
+          "#ebeff1"
+        ]
+      },
+      "board-ink-soft": {
+        "role": "neutral",
+        "displayName": "Board Ink Soft",
+        "canonical": "#bcd0dd",
+        "tonalRamp": [
+          "#010d15",
+          "#172731",
+          "#34454f",
+          "#52646f",
+          "#738591",
+          "#95a8b5",
+          "#b9ccd9",
+          "#dff2fe"
+        ]
+      },
+      "galvanized": {
+        "role": "neutral",
+        "displayName": "Galvanized Steel",
+        "canonical": "#c9d3da",
+        "tonalRamp": [
+          "#060c11",
+          "#1f262b",
+          "#3b4349",
+          "#5a6369",
+          "#7b848a",
+          "#9da7ad",
+          "#c1cbd2",
+          "#e6f0f7"
+        ]
+      },
+      "error-oxide": {
+        "role": "neutral",
+        "displayName": "Error Oxide",
+        "canonical": "#9b2414",
+        "tonalRamp": [
+          "#220000",
+          "#4c0400",
+          "#7d0f02",
+          "#a83221",
+          "#cf5643",
+          "#f87a65",
+          "#fdb4a6",
+          "#ffe9e4"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; uppercase."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles; uppercase."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "Sentence-case pull statement in the crew's own words."
+      },
+      "stamped-number": {
+        "displayName": "Stamped Number",
+        "purpose": "Phone number on the closing tag; tabular, no wrap."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service row links."
+      },
+      "tag-title": {
+        "displayName": "Tag Title",
+        "purpose": "Step names on parts tags; uppercase."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero promise."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form legends and labels."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All buttons."
+      },
+      "fine": {
+        "displayName": "Fine",
+        "purpose": "Fine print, errors, link-buttons."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hanging-part",
+        "value": "offset 7px 11px, blur 9px, rgba(4,16,26,.42) (canvas)",
+        "purpose": "Rack hardware, from the part silhouette."
+      },
+      {
+        "name": "parts-tag",
+        "value": "drop-shadow(5px 9px 7px rgba(4,16,26,.45))",
+        "purpose": "Clipped parts tags."
+      },
+      {
+        "name": "pinned-sheet",
+        "value": "0 18px 30px -14px rgba(4,16,26,.65)",
+        "purpose": "Work order hanging off the board."
+      },
+      {
+        "name": "peg-head",
+        "value": "0 2px 3px rgba(0,0,0,.45)",
+        "purpose": "Steel pegs."
+      },
+      {
+        "name": "primary-lift",
+        "value": "0 6px 16px -6px rgba(5,15,25,.6)",
+        "purpose": "Red primary button only."
+      },
+      {
+        "name": "spring-seam",
+        "value": "stroke offset 5px 8px, rgba(4,16,26,.35) (canvas)",
+        "purpose": "Section seam springs."
+      }
+    ],
+    "motion": [
+      {
+        "name": "shared-loop",
+        "value": "one requestAnimationFrame; systems run only while intersecting (rootMargin 80px); dt capped at 33ms",
+        "purpose": "Drives every moving system; sleeps when nothing is visible."
+      },
+      {
+        "name": "rack-pendulum",
+        "value": "GRAVITY 1500, DAMP 1.1, WIND 0.9, PUSH_R 64px, PUSH 0.0016, GRAB_K 260, GRAB_D 22, SPRING_K 90, SPRING_D 3.2, MAX_DPR 1.5, angle clamp 1.25rad",
+        "purpose": "Hero hardware: pointer push, grab and flick; extension spring stretches under grab. Empty board scrolls the page on touch."
+      },
+      {
+        "name": "spring-seam",
+        "value": "SPACING 11px, TENSION 2600, DAMP 1.6, PLUCK 0.9, SWELL 1.2, COIL_R 10, WIRE 3.2, displacement clamp 20px",
+        "purpose": "Section seams plucked by pointer or by a finger with the page scrolling under it."
+      },
+      {
+        "name": "tag-sway",
+        "value": "SWAY 0.006, K 30, D 3.4, PUSH 0.0009, TAP 0.8, MAX 0.06rad",
+        "purpose": "Parts tags sway on pegs; tap or swipe swings them."
+      },
+      {
+        "name": "state-transition",
+        "value": "background-color/border-color/color .15s-.2s; transform .1s",
+        "purpose": "Hover/focus colour changes and the 1px button press only."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Loop never starts; each system draws one still frame (redrawn on resize); grab disabled; smooth scroll off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width 379px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "rack-wide",
+        "value": "560px (rack canvas width, switches 5-part to 10-part layout)"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Emergency-red action: text or call. The only red on the page surface.",
+      "html": "<div style=\"background:#1d4660;padding:24px\"><a class=\"ds-btn ds-btn-red\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z\"/></svg>Text us a photo</a></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 22px;border-radius:10px;border:2px solid var(--steel,#c9d3da);font:800 18px/1.1 var(--font,system-ui,sans-serif);text-decoration:none;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .1s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #ecdcae;outline-offset:3px}.ds-btn-red{background:#c8321f;border-color:#c8321f;color:#fff;box-shadow:0 6px 16px -6px rgba(5,15,25,.6)}.ds-btn-red:hover{background:#a8281a;border-color:#a8281a}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on the board; galvanized stroke, turns manila on hover.",
+      "html": "<div style=\"background:#1d4660;padding:24px\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">Free estimate</a></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 22px;border-radius:10px;border:2px solid var(--steel,#c9d3da);font:800 18px/1.1 var(--font,system-ui,sans-serif);text-decoration:none;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .1s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #ecdcae;outline-offset:3px}.ds-btn-ghost{background:transparent;color:#f1f5f7}.ds-btn-ghost:hover{border-color:#ecdcae;color:#ecdcae}"
+    },
+    {
+      "name": "Choice Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio chips on the manila work order; selected chips are painted pegboard blue.",
+      "html": "<div style=\"background:#ecdcae;padding:20px;display:flex;flex-wrap:wrap;gap:8px\"><label class=\"ds-chip\"><input type=\"radio\" name=\"ds\" checked><span>Spring broke</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"ds\"><span>Won't open</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"ds\"><span>Tune-up</span></label></div>",
+      "css": ".ds-chip{position:relative;font-family:system-ui,sans-serif}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.ds-chip span{display:flex;align-items:center;min-height:46px;padding:0 16px;border-radius:8px;background:#f7ecca;border:2px solid #8c7a4c;color:#2a2416;font-weight:700;font-size:16px;cursor:pointer;transition:background-color .15s,border-color .15s,color .15s}.ds-chip input:focus-visible+span{outline:3px solid #1d4660;outline-offset:1px}.ds-chip input:checked+span{background:#1d4660;border-color:#1d4660;color:#f1f5f7}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Paper-tint field with pencil-rule border; focus is a pegboard-blue ring.",
+      "html": "<div style=\"background:#ecdcae;padding:20px;font-family:system-ui,sans-serif;color:#2a2416\"><label class=\"ds-lbl\" for=\"dsn\">Your name</label><input class=\"ds-input\" id=\"dsn\" placeholder=\"First name is fine\"></div>",
+      "css": ".ds-lbl{display:block;font-weight:800;font-size:16px;margin:0 0 10px}.ds-input{width:100%;box-sizing:border-box;min-height:52px;padding:12px 14px;border-radius:8px;border:2px solid #8c7a4c;background:#fbf4dc;color:#2a2416;font:500 17px/1.4 system-ui,sans-serif;transition:border-color .15s}.ds-input:focus{outline:3px solid #1d4660;outline-offset:1px}.ds-input::placeholder{color:#7d6d45}"
+    },
+    {
+      "name": "Header Bar",
+      "kind": "nav",
+      "refersTo": "topbar",
+      "description": "Wordmark left, tabular phone number right; no menu.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\"><b>33<sup>rd</sup></b><span>Garage Door<br>Services</span></a><a class=\"ds-tel\" href=\"#\">862-621-8333</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;background:#24556f;color:#f1f5f7;font-family:system-ui,sans-serif}.ds-mark{display:flex;align-items:center;gap:10px;min-height:44px;color:inherit;text-decoration:none;line-height:1}.ds-mark b{font-weight:900;font-size:30px;letter-spacing:-.03em}.ds-mark sup{font-size:.48em;vertical-align:.85em}.ds-mark span{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#bcd0dd;line-height:1.25}.ds-tel{color:inherit;font-weight:800;font-size:17px;text-decoration:none;font-variant-numeric:tabular-nums}.ds-tel:hover{color:#ecdcae}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Whole-row link; only the circular arrow reacts, filling emergency red.",
+      "html": "<div style=\"background:#173a51;padding:0 20px\"><a class=\"ds-row\" href=\"#\">Emergency spring repair<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\"/></svg></span></a></div>",
+      "css": ".ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:14px 0;color:#f1f5f7;text-decoration:none;border-bottom:2px solid rgba(201,211,218,.22);font:800 clamp(22px,6vw,32px)/1.1 system-ui,sans-serif;letter-spacing:-.01em;outline:none}.ds-arrow{flex:none;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:2px solid rgba(201,211,218,.5);transition:background-color .2s,border-color .2s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#c8321f;border-color:#c8321f}.ds-row:focus-visible .ds-arrow{outline:3px solid #ecdcae;outline-offset:3px}"
+    },
+    {
+      "name": "Parts Tag",
+      "kind": "card",
+      "refersTo": "parts-tag",
+      "description": "Manila shipping tag hung by a string from a steel peg; sways on the live page.",
+      "html": "<div style=\"background:#1d4660;padding:24px\"><div class=\"ds-tag\"><span class=\"ds-string\"></span><span class=\"ds-peg\"></span><div class=\"ds-tag-card\"><h3><span class=\"n\">1</span>Tell us</h3><p>Text a photo or call, and tell us what the door is doing.</p></div></div></div>",
+      "css": ".ds-tag{position:relative;padding-top:22px;max-width:320px;font-family:system-ui,sans-serif}.ds-peg{position:absolute;top:0;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#eef2f4,#7d8a94 70%);box-shadow:0 2px 3px rgba(0,0,0,.45);z-index:2}.ds-string{position:absolute;top:6px;left:50%;width:2px;height:36px;margin-left:-1px;background:#d9cfb6;z-index:1}.ds-tag-card{position:relative;background:#ecdcae;color:#2a2416;padding:30px 22px 22px;border-radius:6px 6px 10px 10px;clip-path:polygon(18% 0,82% 0,100% 14px,100% 100%,0 100%,0 14px);filter:drop-shadow(5px 9px 7px rgba(4,16,26,.45))}.ds-tag-card::before{content:'';position:absolute;top:12px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:#1d4660;box-shadow:inset 0 0 0 3px #d4c18d}.ds-tag-card h3{margin:14px 0 6px;font-weight:900;font-size:26px;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}.ds-tag-card .n{color:#1d4660;margin-right:.35em}.ds-tag-card p{margin:0;font-size:17px;line-height:1.45;color:#3e3520}"
+    },
+    {
+      "name": "Work Order Sheet",
+      "kind": "card",
+      "refersTo": "work-order-sheet",
+      "description": "Manila form surface pinned to the board by two steel pegs.",
+      "html": "<div style=\"background:#1d4660;padding:28px 20px\"><div class=\"ds-sheet\"><h2>Free estimate</h2><p>Fill this in and it becomes a text to us.</p></div></div>",
+      "css": ".ds-sheet{position:relative;background:#ecdcae;color:#2a2416;border-radius:8px;padding:28px 18px 26px;box-shadow:0 18px 30px -14px rgba(4,16,26,.65);font-family:system-ui,sans-serif}.ds-sheet::before,.ds-sheet::after{content:'';position:absolute;top:-7px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#eef2f4,#7d8a94 70%);box-shadow:0 2px 3px rgba(0,0,0,.45)}.ds-sheet::before{left:24px}.ds-sheet::after{right:24px}.ds-sheet h2{margin:0 0 12px;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;font-size:clamp(32px,9vw,56px);line-height:.98}.ds-sheet p{margin:0;color:#5c4f30;font-size:17px;line-height:1.55}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Pegboard Wall",
+    "overview": "The page is the back wall of the shop: painted steel-blue pegboard on a strict 24px hole grid, with real door hardware (torsion springs, extension springs, rollers, hinges, lift cables, winding bars) hanging from peg hooks, manila parts tags strung on pegs, and a manila work order pinned up for the estimate. Everything that hangs obeys gravity and can be pushed. One color, emergency-release red, is reserved for the action that gets a homeowner's stuck door fixed: text or call.\n\nThe system is phone-first. It is judged at 360 to 430px inside Facebook's in-app browser; wider layouts are the phone layout given room (two columns, a wider rack), never a separate design. Type is a heavy uppercase system sans set tight and large, so the page reads like stencilled shop signage and loads with zero font requests. Density is low: one idea per section, big tap targets (44px minimum, 56px for primary actions), generous section padding.\n\nMotion is physical, never decorative easing. Every moving thing is a damped spring or pendulum driven from one shared animation loop that sleeps when nothing is on screen, and every moving thing renders a still frame under prefers-reduced-motion. The category's stock photo of a smiling tech beside a van is the confirmed anti-reference; the hardware itself is the imagery.",
+    "keyCharacteristics": [
+      "Painted pegboard ground with a real 24px hole grid; hardware snaps to the holes.",
+      "Manila (tags, work order) is the only light surface; it carries all reading-heavy and form content that is not a headline.",
+      "Emergency red appears only on primary actions and their hover/active echoes.",
+      "System sans at weight 800 to 900, uppercase for display and section headlines.",
+      "Pendulum and spring physics, pointer-driven, with still frames for reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The One Handle Rule",
+        "body": "Emergency red marks the action that gets help (text or call) and nothing else. No red headings, no red decoration on the page surface; inside the rack it appears only where real hardware is red.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Materials Rule",
+        "body": "Surfaces are either painted board (blue family) or manila paper. There is no white card, no grey panel, no third material.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shop Lettering Rule",
+        "body": "Headlines are weight 900, uppercase, negative tracking (-0.02 to -0.025em), line-height under 1. Body never goes below 15px; phone-first body is 17px.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Number Rule",
+        "body": "Every phone number (header, closing tag, footer) uses tabular figures and never wraps.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hole Grid Rule",
+        "body": "The pegboard grid is 24px (`--grid`). Hanging hardware snaps its hook to a hole centre; anything that hangs on the board lands on the grid. In the hero, the hole pattern is masked out behind the copy (measured live as `--copy-h` / `--copy-w`) so text never sits on holes.",
+        "section": "layout"
+      },
+      {
+        "name": "The Seam Rule",
+        "body": "Sections never meet at a bare edge. Each boundary is a 56px stretched extension spring overlapping both panels by 28px, its canvas painting the upper panel colour above the midline and the lower below.",
+        "section": "layout"
+      },
+      {
+        "name": "The Upper-Left Light Rule",
+        "body": "All cast shadows fall down and to the right. A new hanging object gets a blurred down-right shadow; nothing floats with a centred glow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do hang new content on the board: manila for anything the visitor reads closely or fills in, steel for imagery.",
+      "Do snap anything that hangs to the 24px hole grid and give it a blurred down-right shadow.",
+      "Do separate sections with a spring seam whose top and bottom colours match the neighbouring panels.",
+      "Do keep primary actions emergency red, 56px tall, icon-led, and stacked full width on phones.",
+      "Do give every moving element a physical model (pendulum or spring) on the shared loop, and a still frame under prefers-reduced-motion.",
+      "Do keep the system font stack and weights 800 to 900 for headings."
+    ],
+    "donts": [
+      "Don't use emergency red for headings, decoration or non-action elements.",
+      "Don't introduce stock photography, illustrated people or vans; the hardware is the imagery.",
+      "Don't add a white or grey card material; surfaces are board or manila.",
+      "Don't let a touch on empty board capture the scroll; only a touch on hardware may hold it.",
+      "Don't animate with keyframe tweens or easing curves for the world's motion; only state colour changes use CSS transitions.",
+      "Don't load a webfont."
+    ]
+  }
+}

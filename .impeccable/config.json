@@ -1,0 +1,32 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-19T11:37:47.604Z",
+        "reason": "pitch-site house rule (ellie-taste.md): system font stack; Roboto is only the Android system fallback"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T11:37:47.704Z",
+        "reason": "uppercase display headings at 0.92-1.12 by design; body text is 1.45-1.55"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T11:37:47.807Z",
+        "reason": "services list is a ruled list: rows have 14px vertical padding under the top rule; flush left is the list's alignment"
+      }
+    ]
+  }
+}
